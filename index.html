@@ -146,15 +146,15 @@
         <div class="content">
             <div class="section">
                 <h2>📋 概述</h2>
-                <p>速通英语是一款完全本地运行的英语学习应用。我们重视您的隐私，本应用不会收集、上传或分享您的个人信息。</p>
+                <p>速通英语是一款英语学习应用。应用的绝大部分功能完全在您的设备上本地运行；在已登录 iCloud 的 Apple 设备上，您的偏好设置与学习进度会通过 Apple iCloud 在您自己的设备之间同步。除此之外，我们不会将您的任何数据上传至由我们运营的服务器，也不会收集、出售或分享您的个人信息。</p>
                 <div class="highlight">
-                    <strong>核心原则：</strong> 您的数据属于您自己，我们不会收集、存储或分享您的任何个人信息。
+                    <strong>核心原则：</strong> 您的数据属于您自己。数据保存在您的设备和您本人的 iCloud 账户中，开发者无法读取，也不会向任何第三方出售或共享。
                 </div>
             </div>
 
             <div class="section">
                 <h2>🔒 数据收集</h2>
-                <p>本应用<strong>不收集</strong>任何个人身份信息，包括但不限于：</p>
+                <p>本应用<strong>不收集</strong>任何个人身份信息，我们也不会将任何数据上传至自有服务器，包括但不限于：</p>
                 <ul>
                     <li>姓名、邮箱、电话号码等个人信息</li>
                     <li>设备标识符（IDFA、OAID等）</li>
@@ -165,15 +165,29 @@
             </div>
 
             <div class="section">
-                <h2>💾 本地存储</h2>
-                <p>应用会在您的设备上本地存储以下信息，这些数据<strong>仅存储在您的设备上</strong>，不会上传到任何服务器：</p>
+                <h2>💾 数据存储</h2>
+                <p>应用会在您的设备上存储以下信息：</p>
                 <ul>
-                    <li><strong>应用设置：</strong>主题模式（深色/浅色）、语音偏好、语速等</li>
-                    <li><strong>学习进度：</strong>您的学习记录和进度</li>
-                    <li><strong>内购状态：</strong>iOS 设备上的应用内购买标记（仅本地存储）</li>
-                    <li><strong>更新提醒：</strong>您选择"稍后提醒"的时间戳</li>
+                    <li><strong>应用设置：</strong>主题模式（深色/浅色）、语音偏好、语速等（本地保存，可在 Apple 设备间通过 iCloud 同步）</li>
+                    <li><strong>学习进度：</strong>您的学习记录、复习计划、生词与练习数据（本地保存，可在 Apple 设备间通过 iCloud 同步）</li>
+                    <li><strong>内购状态：</strong>iOS 设备上的应用内购买标记（仅本地存储，不参与同步）</li>
+                    <li><strong>更新提醒：</strong>您选择"稍后提醒"的时间戳（仅本地存储，不参与同步）</li>
+                    <li><strong>录音文件：</strong>跟读录音仅临时保存在本地，不参与同步（详见"权限使用"）</li>
                 </ul>
-                <p>这些数据随应用卸载而自动删除。</p>
+                <p>卸载应用会删除设备上的本地数据；已同步至 iCloud 的数据需在系统的 iCloud 管理页面中自行删除（详见"iCloud 同步"与"您的权利"）。</p>
+            </div>
+
+            <div class="section">
+                <h2>☁️ iCloud 同步（仅 Apple 平台）</h2>
+                <p>当您在 iOS / iPadOS / macOS 设备上登录 iCloud 并允许本应用使用 iCloud 时，应用会借助 Apple 提供的 iCloud 服务，把上述设置与学习进度在您本人的 Apple 设备之间同步。Android 及 HarmonyOS 版本不包含此功能。</p>
+                <ul>
+                    <li><strong>同步内容：</strong>应用设置、学习进度等学习数据；不包含录音文件、支付信息或设备标识信息</li>
+                    <li><strong>存储位置：</strong>同步数据保存在<strong>您自己的 Apple 账户</strong>（iCloud）中，由 Apple 负责传输与存储</li>
+                    <li><strong>开发者权限：</strong>我们无法访问、读取、导出或解密您 iCloud 中的任何数据，也不会获取您的 Apple ID 或账户信息</li>
+                    <li><strong>关闭方式：</strong>您可随时在「设置 → Apple ID → iCloud」中关闭本应用的 iCloud 同步；关闭后数据仅保存在本机，不再跨设备同步</li>
+                    <li><strong>删除方式：</strong>在「设置 → Apple ID → iCloud → 管理账户存储」中删除本应用的数据，即可清除已同步内容</li>
+                </ul>
+                <p>iCloud 服务由 Apple 提供，其数据处理还受 <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple 隐私政策</a> 约束。</p>
             </div>
 
             <div class="section">
@@ -184,7 +198,7 @@
                 <p><strong>数据处理：</strong></p>
                 <ul>
                     <li>录音文件仅临时存储在设备的临时目录中</li>
-                    <li>录音文件不会上传到任何服务器</li>
+                    <li>录音文件不会上传到任何服务器，也不通过 iCloud 同步</li>
                     <li>录音文件在应用关闭或重新录制时自动删除</li>
                     <li>您可以随时在系统设置中撤销麦克风权限</li>
                 </ul>
@@ -192,13 +206,16 @@
 
             <div class="section">
                 <h2>🌐 网络使用</h2>
-                <p>应用仅在以下情况访问网络，且不会上传您的任何个人数据：</p>
+                <p>应用仅在以下情况访问网络，且不会将您的个人数据上传至我方服务器：</p>
                 
                 <h3>1. 检查应用更新</h3>
                 <p>应用可能会访问各平台官方应用商店的公开接口检查是否有新版本可用。此请求不包含任何个人信息。</p>
                 
                 <h3>2. 应用内购买（仅 iOS 平台）</h3>
                 <p>iOS 版本支持应用内购买（支持作者功能），支付流程完全由 Apple 的 App Store 支付系统处理。我们不会获取或存储您的支付信息。Android 及 HarmonyOS 版本不包含此功能。</p>
+
+                <h3>3. iCloud 同步（仅 Apple 平台）</h3>
+                <p>开启 iCloud 后，应用会通过 Apple 系统提供的 iCloud 框架，将设置与学习进度同步到您自己的 Apple 账户。该同步数据直接由 Apple 的 iCloud 服务器处理，不经过我们运营的服务器，我们亦无法访问。</p>
             </div>
 
             <div class="section">
@@ -207,14 +224,14 @@
                 <ul>
                     <li>所有支付信息由 Apple 处理和存储</li>
                     <li>我们不会获取您的信用卡、支付宝或其他支付信息</li>
-                    <li>购买记录仅在您的设备上本地标记</li>
+                    <li>购买记录仅在您的设备上本地标记，不通过 iCloud 同步</li>
                     <li>购买是一次性的消耗型项目，用于支持开发者</li>
                 </ul>
             </div>
 
             <div class="section">
                 <h2>🚫 第三方服务</h2>
-                <p>本应用<strong>不使用</strong>任何第三方服务，包括：</p>
+                <p>本应用<strong>不使用</strong>任何第三方数据分析、广告或追踪服务，包括：</p>
                 <ul>
                     <li>数据分析工具（如 Google Analytics、Firebase Analytics）</li>
                     <li>广告平台</li>
@@ -222,25 +239,28 @@
                     <li>社交媒体 SDK</li>
                     <li>崩溃报告工具</li>
                 </ul>
-                <p>应用仅使用 Flutter 官方插件及各平台官方系统 API。</p>
+                <p>应用中涉及的平台级服务仅有 Apple 提供的两项：<strong>iCloud（用于数据同步）</strong>与 <strong>App Store（用于应用内购买）</strong>，相关数据处理遵循 Apple 的隐私政策。除此之外，应用仅使用 Flutter 官方插件及各平台官方系统 API。</p>
             </div>
 
             <div class="section">
                 <h2>👶 儿童隐私</h2>
-                <p>本应用适合所有年龄段使用，不会收集儿童的个人信息。由于应用不收集任何个人数据，因此符合儿童在线隐私保护法（COPPA）的要求。</p>
+                <p>本应用适合所有年龄段使用，我们不会收集儿童的个人信息，也不会将其上传至我方服务器。若在儿童使用的 Apple 设备上开启了 iCloud 同步，同步数据同样仅保存在该设备所登录的 Apple 账户中，由账户持有人（家长或监护人）管理，我们无法访问。</p>
+                <p>由于我们自身不收集任何个人数据，本应用符合儿童在线隐私保护法（COPPA）的相关要求。</p>
             </div>
 
             <div class="section">
                 <h2>🔐 数据安全</h2>
-                <p>由于应用不收集或上传任何个人数据，因此不存在数据泄露的风险。所有数据都安全地存储在您的设备上，受设备操作系统的安全机制保护。</p>
+                <p>本地数据存储在应用沙盒中，受设备操作系统安全机制保护。iCloud 同步数据在传输过程中由 Apple 使用加密连接传输，并在 Apple 服务器上加密存储；开发者无法读取或解密这些数据。</p>
+                <p>请注意：iCloud 数据的安全同时取决于您的 Apple 账户安全，建议开启双重认证并妥善保管您的 Apple ID 密码。</p>
             </div>
 
             <div class="section">
                 <h2>✅ 您的权利</h2>
                 <p>您对自己的数据拥有完全控制权：</p>
                 <ul>
-                    <li><strong>访问权：</strong>所有数据都存储在您的设备上，您可以随时访问</li>
-                    <li><strong>删除权：</strong>卸载应用即可删除所有本地数据</li>
+                    <li><strong>访问权：</strong>数据存储在您的设备及您本人的 iCloud 账户中，您可以随时访问</li>
+                    <li><strong>删除权：</strong>卸载应用即可删除本地数据；若要删除已同步的数据，请在「设置 → Apple ID → iCloud → 管理账户存储」中删除本应用的数据</li>
+                    <li><strong>关闭同步：</strong>您可以随时在系统设置中关闭本应用的 iCloud 同步</li>
                     <li><strong>撤销权限：</strong>您可以随时在系统设置中撤销麦克风权限</li>
                 </ul>
             </div>
